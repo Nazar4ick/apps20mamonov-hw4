@@ -63,7 +63,8 @@ public class PrefixMatches {
                 return allWords;
             }
             String nextWord = allWords.get(i);
-            if (kLengthWords.get(kLengthWords.size()-1).length() != nextWord.length()) {
+            if (kLengthWords.get(kLengthWords.size()-1).length()
+                    != nextWord.length()) {
                 counter += 1;
             }
         }

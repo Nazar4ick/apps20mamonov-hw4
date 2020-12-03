@@ -102,7 +102,8 @@ public class RWayTrie implements Trie {
             }
             for (char c = 0; c < R; c++) {
                 if (current != null && current.node.next[c] != null) {
-                    q.enqueue(new WordNode(current.node.next[c], current.word + c));
+                    q.enqueue(new WordNode(current.node.next[c],
+                            current.word + c));
                 }
             }
         }
@@ -112,7 +113,7 @@ public class RWayTrie implements Trie {
         private final Node node;
         private final String word;
 
-        public WordNode(Node node, String word) {
+        private WordNode(Node node, String word) {
             this.node = node;
             this.word = word;
         }
