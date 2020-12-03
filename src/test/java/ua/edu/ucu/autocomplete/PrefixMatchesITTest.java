@@ -44,4 +44,10 @@ public class PrefixMatchesITTest {
         assertThat(result, containsInAnyOrder(expResult));
     }
 
+    @Test
+    public void testLoad() {
+        int added = pm.load("zzz", "xxx", "zzz");
+        int expected = 3;
+        assertEquals(added, expected);
+    }
 }
