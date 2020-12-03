@@ -136,16 +136,4 @@ public class RWayTrie implements Trie {
         }
         return cnt;
     }
-
-    public static void main(String[] args) {
-        RWayTrie rWayTrie = new RWayTrie();
-        rWayTrie.add(new Tuple("by", 2));
-        rWayTrie.add(new Tuple("sea", 3));
-        rWayTrie.add(new Tuple("sells", 5));
-        rWayTrie.add(new Tuple("shells", 6));
-        rWayTrie.add(new Tuple("shore", 5));
-        rWayTrie.add(new Tuple("the", 3));
-        rWayTrie.add(new Tuple("she", 3));
-        System.out.println(rWayTrie.size());
-    }
 }

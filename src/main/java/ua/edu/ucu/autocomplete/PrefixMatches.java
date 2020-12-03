@@ -1,6 +1,5 @@
 package ua.edu.ucu.autocomplete;
 
-import ua.edu.ucu.tries.RWayTrie;
 import ua.edu.ucu.tries.Trie;
 import ua.edu.ucu.tries.Tuple;
 
@@ -8,10 +7,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 
-/**
- *
- * @author andrii
- */
 public class PrefixMatches {
 
     private final Trie trie;
@@ -77,11 +72,5 @@ public class PrefixMatches {
 
     public int size() {
         return trie.size();
-    }
-
-    public static void main(String[] args) {
-        PrefixMatches pm = new PrefixMatches(new RWayTrie());
-        pm.load("abc", "abce", "abcd", "abcde", "abcdef");
-        System.out.println(pm.wordsWithPrefix("abc", 3));
     }
 }

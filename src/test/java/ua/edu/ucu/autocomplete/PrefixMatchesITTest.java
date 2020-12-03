@@ -7,10 +7,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import ua.edu.ucu.tries.RWayTrie;
 
-/**
- *
- * @author Andrii_Rodionov
- */
+
 public class PrefixMatchesITTest {
 
     private PrefixMatches pm;
